@@ -1,0 +1,249 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="781.3333333333334,3143.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="88">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.SmartData.PositionBasedExtraction.Storage</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Vision.OmniPage.Core</x:String>
+      <x:String>UiPath.OmniPage.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="126">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.SmartData.PositionBasedExtraction</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.OmniPage.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="660.6666666666666,3078.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="C:\Users\hamza.bchiri\OneDrive - TUI\Documents\UiPath\0109_P2P_LAE\DocumentProcessing\BookingForm\" Name="strDocumentsPath" />
+      <Variable x:TypeArguments="p5:DocumentTaxonomy" Name="taxonomy" />
+      <Variable x:TypeArguments="sd2:DataSet" Name="DataSet" />
+      <Variable x:TypeArguments="p3:ExtractionResult" Name="extractionResult" />
+      <Variable x:TypeArguments="p4:Document" Name="DOM" />
+      <Variable x:TypeArguments="x:String" Name="strDocumentText" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="DtOutput" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="618.6666666666666,2668" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BuildDataTable DataTable="[DtOutput]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="556.6666666666666,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Booking_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Original_x0020_Hotel_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;currency&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;amount_x0020_service_x0020_charge&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;guest_x0020_amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="556.6666666666666,108" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[taxonomy]" />
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556.6666666666666,2309.3333333333335" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Directory.GetFiles(strDocumentsPath)]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="PDF" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,2180" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[PDF]" DocumentText="[strDocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,307.3333333333333" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+                <p:DigitizeDocument.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                    <ActivityFunc.Argument1>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument1>
+                    <ActivityFunc.Argument2>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                    </ActivityFunc.Argument2>
+                    <uoa:OmniPageOCR Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="OmniPage OCR" ExtractHandprintedText="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,25.333333333333332" sap2010:WorkflowViewState.IdRef="OmniPageOCR_1" Image="[Image]" PredictionId="[PredictionId]" />
+                  </ActivityFunc>
+                </p:DigitizeDocument.OCREngine>
+              </p:DigitizeDocument>
+              <p1:DataExtractionScope ClassificationResult="{x:Null}" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[PDF]" DocumentText="[strDocumentText]" DocumentTypeId="NoGroup.NoCategory.BookingForm" ExtractionResult="[extractionResult]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="478,500" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI3f13eb98aece4227912ef7316439032b&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;NoGroup.NoCategory.BookingForm&quot;:{&quot;FieldMappings&quot;:{&quot;NoGroup.NoCategory.BookingForm.BookingNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.BookingForm.BookingNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.BookingForm.OriginalHotelCode&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.BookingForm.OriginalHotelCode&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.BookingForm.currency&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.BookingForm.currency&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.BookingForm.amountservicecharge&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.BookingForm.amountservicecharge&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.BookingForm.guestamount&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.BookingForm.guestamount&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI3f13eb98aece4227912ef7316439032b&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI3f13eb98aece4227912ef7316439032b&quot;:[]}}">
+                <p1:DataExtractionScope.Extractors>
+                  <p1:IntelligentFormExtractor SerializedSignatureFields="{x:Null}" ApiKey="tahy9U9U+fK3JBPyI/x5JDMGKxnNES6j6eoZ4Yklb5BxToMoJMhMCBDg7oi6bxpgArOoMGPco0MacE0WB8qTeA==" DisplayName="[deprecated] Intelligent Form Extractor" Endpoint="https://du.uipath.com/svc/intelligentforms" sap:VirtualizedContainerService.HintSize="234,166" sap2010:WorkflowViewState.IdRef="IntelligentFormExtractor_1" MinOverlapPercentage="65" PersistenceId="UI3f13eb98aece4227912ef7316439032b" SerializedSettings="{}{}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.BookingForm&quot;,&quot;FormId&quot;:&quot;0755b251&quot;,&quot;FormName&quot;:&quot;BookingForm&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,595.0,841.0],&quot;SkewAngle&quot;:-0.1,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;Change&quot;,&quot;Box&quot;:[68.55,53.61,56.01,17.6]},{&quot;Text&quot;:&quot;of&quot;,&quot;Box&quot;:[68.82,113.36,17.87,13.6]},{&quot;Text&quot;:&quot;booking&quot;,&quot;Box&quot;:[68.28,134.17,61.35,17.87]},{&quot;Text&quot;:&quot;form&quot;,&quot;Box&quot;:[68.82,198.45,37.34,13.87]},{&quot;Text&quot;:&quot;LAE&quot;,&quot;Box&quot;:[102.16,66.15,14.4,7.47]},{&quot;Text&quot;:&quot;number&quot;,&quot;Box&quot;:[102.42,81.62,28.01,6.94]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;NoGroup.NoCategory.BookingForm.BookingNumber&quot;,&quot;Box&quot;:[160.0274,45.7956,50.4266,17.495]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.BookingForm.OriginalHotelCode&quot;,&quot;Box&quot;:[240.2983,54.0285,48.883,10.2911]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.BookingForm.currency&quot;,&quot;Box&quot;:[611.8089,52.9994,38.5918,15.9513]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.BookingForm.amountservicecharge&quot;,&quot;Box&quot;:[589.6829,180.6097,24.6988,16.9804]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.BookingForm.guestamount&quot;,&quot;Box&quot;:[611.2943,99.8242,136.3577,18.5241]}],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[]}}]" Timeout="100000">
+                    <p1:IntelligentFormExtractor.DocumentBounds>
+                      <InArgument x:TypeArguments="p3:ResultsDocumentBounds">
+                        <DelegateArgumentValue x:TypeArguments="p3:ResultsDocumentBounds">
+                          <DelegateInArgument x:TypeArguments="p3:ResultsDocumentBounds" Name="DocumentBounds" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.DocumentBounds>
+                    <p1:IntelligentFormExtractor.DocumentObjectModel>
+                      <InArgument x:TypeArguments="p4:Document">
+                        <DelegateArgumentValue x:TypeArguments="p4:Document">
+                          <DelegateInArgument x:TypeArguments="p4:Document" Name="DocumentObjectModel" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.DocumentObjectModel>
+                    <p1:IntelligentFormExtractor.DocumentPath>
+                      <InArgument x:TypeArguments="x:String">
+                        <DelegateArgumentValue x:TypeArguments="x:String">
+                          <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.DocumentPath>
+                    <p1:IntelligentFormExtractor.DocumentText>
+                      <InArgument x:TypeArguments="x:String">
+                        <DelegateArgumentValue x:TypeArguments="x:String">
+                          <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.DocumentText>
+                    <p1:IntelligentFormExtractor.ExtractorDocumentType>
+                      <InArgument x:TypeArguments="p2:ExtractorDocumentType">
+                        <DelegateArgumentValue x:TypeArguments="p2:ExtractorDocumentType">
+                          <DelegateInArgument x:TypeArguments="p2:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.ExtractorDocumentType>
+                    <p1:IntelligentFormExtractor.ExtractorResult>
+                      <OutArgument x:TypeArguments="p2:ExtractorResult">
+                        <DelegateArgumentReference x:TypeArguments="p2:ExtractorResult">
+                          <DelegateOutArgument x:TypeArguments="p2:ExtractorResult" Name="ExtractorResult" />
+                        </DelegateArgumentReference>
+                      </OutArgument>
+                    </p1:IntelligentFormExtractor.ExtractorResult>
+                    <p1:IntelligentFormExtractor.PredictionId>
+                      <InArgument x:TypeArguments="x:String">
+                        <DelegateArgumentValue x:TypeArguments="x:String">
+                          <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:IntelligentFormExtractor.PredictionId>
+                  </p1:IntelligentFormExtractor>
+                </p1:DataExtractionScope.Extractors>
+              </p1:DataExtractionScope>
+              <p1:ExportExtractionResults DataSet="[DataSet]" DisplayName="Export Extraction Results" ExtractionResult="[extractionResult]" sap:VirtualizedContainerService.HintSize="478,182" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" IncludeOCRConfidence="False" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[Path.GetFileName(PDF)]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Booking Number :  &quot; +  DataSet.Tables(0).Rows(0).Item(&quot;Booking Number&quot;).ToString]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;Original Hotel Code :  &quot;  + DataSet.Tables(0).Rows(0).Item(&quot; Original Hotel Code&quot;).ToString]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;currency : &quot;  + DataSet.Tables(0).Rows(0).item(&quot;currency&quot;).ToString]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;amount service charge :  &quot; + DataSet.Tables(0).Rows(0).Item(&quot;amount service charge&quot;).ToString]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;guest amount : &quot; + Dataset.Tables(0).Rows(0).Item(&quot;guest amount&quot;).ToString]" />
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DataSet.Tables(0).Rows(0).Item(&quot;Booking Number&quot;).ToString,DataSet.Tables(0).Rows(0).Item(&quot; Original Hotel Code&quot;).ToString,DataSet.Tables(0).Rows(0).Item(&quot;currency&quot;).ToString,DataSet.Tables(0).Rows(0).Item(&quot;amount service charge&quot;).ToString,Dataset.Tables(0).Rows(0).Item(&quot;guest amount&quot;).ToString}]" DataTable="[DtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478,191.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="618.6666666666666,283.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,203.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[DtOutput]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[strDocumentsPath + &quot;\&quot; + &quot;DataOutput.xlsx&quot;]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
